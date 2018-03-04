@@ -51,12 +51,13 @@ video {
 	line-height: 55px;
 	font-size: 20px;
 	background: linear-gradient(#555, #777);
+	display: flex;
 }
 
 .nav-a {
 	color: white;
 	text-decoration: none;
-	display: block;
+	flex: 1;
 	margin: 2px;
 	border: 1px solid #666;
 }
@@ -76,6 +77,7 @@ video {
 	order: 2;
 	width: 100%;
 	text-align: center;
+	flex-direction: column;
 }
 
 h1 {
@@ -95,12 +97,10 @@ h2 {
 }
 
 .long-name {
-	display: none;
 	color: black;
 }
 
 .short-name {
-	display: block;
 	color: black;
 }
 
@@ -181,7 +181,6 @@ footer {
 }
 
 .p-footer {
-	display: inline-block;
 	min-width: 25%;
 	margin-left: 7%;
 	text-align: left;
@@ -192,6 +191,12 @@ footer {
 	color: white;
 	text-decoration: none;
 	margin: 3px;
+}
+
+@media screen and (min-width: 201px) and (max-width: 400px) {
+	.long-name {
+		display: none;
+	}
 }
 
 @media screen and (max-width: 400px) {
@@ -244,7 +249,6 @@ footer {
 	}
 
 	.long-name {
-		display: block;
 		font-size: 14px;
 	}
 
@@ -273,10 +277,6 @@ footer {
 		display: none;
 	}
 
-	.long-name {
-		display: block;
-	}
-
 	.motto {
 		font-size: 15px;
 	}
@@ -290,10 +290,6 @@ footer {
 }
 
 @media screen and (min-width: 501px) {
-	.long-name {
-		display: block;
-	}
-
 	.short-name {
 		display: none;
 	}

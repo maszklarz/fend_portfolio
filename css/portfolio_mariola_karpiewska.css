@@ -1,0 +1,404 @@
+
+body {
+	font-size: 16px;
+	line-height: 1.2em;
+	font-family: Arial, Times, serif;
+	margin: 1em;
+}
+
+.second-color {
+	color: #f00;
+}
+
+.main-container {
+	width: 100%;
+}
+
+.box {
+	width: 100px;
+	height: 100px;
+}
+
+header {
+	width: 100%;
+}
+
+img, embed, object, video {
+	max-width: 100%;
+}
+
+.nav-list {
+	list-style-type: none;
+	padding: 0;
+	width: 100%;
+	background-color: #555;
+	left: 0;
+	display: none;
+}
+
+.open {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.nav-item {
+	width: 100%;
+	text-align: center;
+	line-height: 55px;
+	font-size: 20px;
+	background: linear-gradient(#555, #777);
+}
+
+.nav-a {
+	color: white;
+	text-decoration: none;
+	display: block;
+	margin: 2px;
+	border: 1px solid #666;
+}
+
+.brag-item-a {
+	color: black;
+	text-decoration: none;
+}
+
+.nav-a:hover, .foot-a:hover {
+	margin: 2px;
+	border: 1px solid #fff;
+}
+
+.be-flex {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.logo {
+	width: 20%;
+	height: 18%;
+}
+
+.top-area-sign {
+	order: 2;
+	width: 100%;
+	text-align: center;
+}
+
+h1 {
+	font-size: 28px;
+	line-height: 1.2em;
+	font-family: Arial, Times, serif;
+	font-style: normal;
+	text-transform: uppercase;
+}
+
+h2 {
+	font-size: 20px;
+	line-height: 1.2em;
+	font-family: Arial, Times, serif;
+	font-style: normal;
+	text-transform: uppercase;
+}
+
+.long-name {
+	display: none;
+	color: black;
+}
+
+.short-name {
+	display: block;
+	color: black;
+}
+
+.motto {
+	font-size: 20px;
+	font-style: normal;
+	text-transform: uppercase;
+	color: red;
+}
+
+nav {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+}
+
+.hamburger {
+	order: 0;
+	margin-left: auto;
+	width: 76px;
+	height: 76px;
+}
+
+.top-area-picture {
+	order: 3;
+	width: 100%;
+	padding-top: 15px;
+}
+
+.main-pic {
+	width: 100%;
+	height: auto;
+}
+
+main {
+	width: 100%;
+}
+
+.main-description {
+	font-size: 16px;
+	line-height: 1.2em;
+	font-family: Arial, Times, serif;
+	border: 0;
+	border-style: solid;
+	border-color: lightgray;
+}
+
+.brag-area {
+	width: 100%;
+	margin-top: 5%;
+	background: linear-gradient(#fff, #ddd, #fff);
+}
+
+.brag-reason {
+	width: 100%;
+}
+
+.brag-list {
+	width: 100%;
+}
+
+.brag-item {
+	width: 100%;
+	padding: 0.5% 0.5% 0.5% 0.5%;
+}
+
+.brag-image {
+	width: 100%;
+}
+
+footer {
+	padding: 1%;
+	width: 100%;
+	background-color: gray;
+	background: linear-gradient(#777, #555);
+	color: white;
+	text-align: center;
+	order: 2;
+}
+
+.p-footer {
+	display: inline-block;
+	width: 25%;
+	margin-left: 7%;
+	text-align: left;
+	font-size: 12px;
+}
+
+.foot-a {
+	color: white;
+	text-decoration: none;
+	margin: 3px;
+}
+
+@media screen and (max-width: 400px) {
+	body {
+		font-size: 14px;
+		line-height: 1.2em;
+	}
+
+	h2 {
+		font-size: 16px;
+	}
+
+	.logo {
+		width: 78px;
+		height: 78px;
+	}
+
+	.short-name {
+		font-size: 23px;
+	}
+
+	.motto {
+		font-size: 14px;
+	}
+
+	.main-description {
+		font-size: 14px;
+		line-height: 1.2em;
+	}
+}
+
+@media screen and (max-width: 200px) {
+	body {
+		font-size: 14px;
+		line-height: 1.2em;
+	}
+
+	.logo {
+		width: 55px;
+		height: 55px;
+	}
+
+	.hamburger {
+		width: 48px;
+		height: 55px;
+	}
+
+	.short-name {
+		display: none;
+	}
+
+	.long-name {
+		display: block;
+		font-size: 14px;
+	}
+
+	.motto {
+		font-size: 11px;
+	}
+
+	.main-description {
+		font-size: 14px;
+		line-height: 1.2em;
+	}
+}
+
+@media screen and (min-width: 401px) and (max-width: 500px) {
+	.logo {
+		width: 78px;
+		height: 78px;
+	}
+
+	.top-area-sign {
+		width: 100%;
+		text-align: center;
+	}
+
+	.short-name {
+		display: none;
+	}
+
+	.long-name {
+		display: block;
+	}
+
+	.motto {
+		font-size: 15px;
+	}
+
+	.hamburger {
+		order: 0;
+		margin-left: auto;
+		width: 76px;
+		height: 76px;
+	}
+}
+
+@media screen and (min-width: 501px) {
+	.long-name {
+		display: block;
+	}
+
+	.short-name {
+		display: none;
+	}
+
+	.nav-item {
+		width: 1000px;
+		text-align: center;
+		line-height: 55px;
+		font-size: 20px;
+	}
+
+	.nav-list {
+		background: linear-gradient(#555, #777);
+		position: relative;
+		width: 100%;
+		display: flex;
+		flex-wrap: nowrap;
+		left: 0;
+		visibility: visible;
+		top: 0;
+	}
+
+	.hamburger {
+		display: none;
+	}
+
+	nav {
+		order: 0;
+		margin-left: auto;
+		width: 100%;
+	}
+
+	.top-area-sign {
+		order: 0;
+		width: 80%;
+		text-align: center;
+	}
+
+	.top-area-picture {
+		order: 0;
+	}
+}
+
+@media screen and (min-width: 551px) {
+	.brag-item {
+		width: 32.333333%;
+		padding: 0.5% 0.5% 0.5% 0.5%;
+	}
+
+	.main-description {
+		font-size: 20px;
+	}
+}
+
+@media screen and (min-width: 700px) {
+	h2 {
+		font-size: 23px;
+	}
+
+	.long-name {
+		font-size: 40px;
+	}
+
+	.motto {
+		font-size: 25px;
+	}
+}
+
+@media screen and (min-width: 800px) {
+	.main-container {
+		width: 100%;
+	}
+
+	.box {
+		width: 100px;
+		height: 100px;
+	}
+
+	.long-name {
+		font-size: 50px;
+	}
+
+	.p-footer {
+		font-size: 14px;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	body {
+		width: 1024px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.brag-reason {
+		width: 20%;
+	}
+
+	.brag-list {
+		width: 80%;
+	}
+}
